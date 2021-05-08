@@ -24,3 +24,8 @@ During training you can check the loss value of each epoch in `data/models/logs`
 After training the model, you can find 2 different weigths in `data/models`:
 1) `model_best.pth.tar`: This file contains the weights of the model of the epoch with the lowest validation loss value.
 2) `checkpoint.pth.tar`: This file contains the weights of the model of the last epoch.
+
+### Testing
+You can evaluate the model and create the submission file by running `python testing.py`. This will evaluate the model using the default value `model_best.pth.tar`, but you can select `checkpoint.pth.tar` by running `python testing.py --best-model=checkpoint.pth.tar`.
+
+After testing, you can find the submission file in `outputs/test.pkl`.
