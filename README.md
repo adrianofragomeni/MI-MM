@@ -1,5 +1,5 @@
 # (MI)llion-(M)ax(M)argin (MI-MM)
-Code and Data of the MIllion-MaxMargin model used as baseline for the EPIC-KITCHENS-100 Multi-Instance Retrieval Challenge.
+Code and Data of the MIllion-MaxMargin model used as baseline for the [EPIC-KITCHENS-100 Multi-Instance Retrieval Challenge](https://competitions.codalab.org/competitions/26138#learn_the_details).
 
 ## Data
 The data directory contains 5 folders:
