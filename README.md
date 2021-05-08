@@ -20,3 +20,7 @@ You can install a conda enviroment using `conda env -n create environment.yml`.
 You can train the model using the default values defined in `src/utils/utils.py` by running the the following command: `python training.py`. You can run `python training.py --help` to see the full list of arguments you can pass to the script.
 
 During training you can check the loss value of each epoch in `data/models/logs`, where you can find `train.txt` and `val.txt`. Moreover, you can inspect the training and testing loss curves by running `tensorboard --logdir=data/models/logs/runs`.
+
+After training the model, you can find 2 different weigths in `data/models`:
+1 a
+2 b
