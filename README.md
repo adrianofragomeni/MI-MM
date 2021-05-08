@@ -1,8 +1,9 @@
 # (MI)llion-(M)ax(M)argin (MI-MM)
 Code and Data of the MIllion-MaxMargin model used as baseline for the [EPIC-KITCHENS-100 Multi-Instance Retrieval Challenge](https://competitions.codalab.org/competitions/26138#learn_the_details).
 
-![MI-MM](https://github.com/adrianofragomeni/MI-MM/blob/main/img/model.png?raw=true)
-
+<p align="center">
+  <img width="600" height="200" src="https://github.com/adrianofragomeni/MI-MM/blob/main/img/model.png?raw=true">
+</p>
 The model is based on 
 ## Data
 The data directory contains 5 folders:
