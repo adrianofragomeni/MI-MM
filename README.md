@@ -2,7 +2,7 @@
 Code and Data of the MIllion-MaxMargin model used as baseline for the [EPIC-KITCHENS-100 Multi-Instance Retrieval Challenge](https://competitions.codalab.org/competitions/26138#learn_the_details).
 
 <p align="center">
-  <img width="378" height="393" src="https://github.com/adrianofragomeni/MI-MM/blob/main/img/model.png?raw=true">
+  <img width="378" height="393" src="https://github.com/adrianofragomeni/MI-MM/blob/main/img/model.png?raw=true",     title="MI-MM model">
 </p>
 
 The model is based on 
