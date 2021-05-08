@@ -2,7 +2,8 @@
 Code and Data of the MIllion-MaxMargin model used as baseline for the [EPIC-KITCHENS-100 Multi-Instance Retrieval Challenge](https://competitions.codalab.org/competitions/26138#learn_the_details).
 
 The MI-MM model is a modified version of the model used in [End-to-End Learning of Visual Representations from Uncurated Instructional Videos](https://www.di.ens.fr/willow/research/mil-nce/). The main changes are three:
-1) Using tho Gated Embedding Unit instead of a simple Linear layer to project the features pace into the embedding space (read [here](https://arxiv.org/pdf/1804.02516.pdf) to know more about the Gated Embeddin Unit).
+1) Using tho Gated Embedding Unit instead of a simple Linear layer to project the features pace into the embedding space (read [Learning a Text-Video Embedding from
+Incomplete and Heterogeneous Data](https://arxiv.org/pdf/1804.02516.pdf) to know more about the Gated Embeddin Unit).
 2) Increasing the size of the vocabulary due to the lack of wsome relevant words.
 3) Using the Multi-instance MaxMargin loss instead of the MIL-NCE loss (read [Fine-Grained Action Retrieval Through Multiple Parts-of-Speech Embeddings](https://arxiv.org/pdf/1908.03477.pdf) to know more about the Multi-instance MaxMargin loss).
 
