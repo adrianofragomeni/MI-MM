@@ -13,4 +13,7 @@ You can download the data directory from [here](https://www.dropbox.com/sh/lp1zu
 
 ## How to use it
 
+### Requirements
+You can install a conda enviroment using `conda env -n create environment.yml`.
+
 ### Training
