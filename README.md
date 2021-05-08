@@ -2,10 +2,9 @@
 Code and Data of the MIllion-MaxMargin model used as baseline for the [EPIC-KITCHENS-100 Multi-Instance Retrieval Challenge](https://competitions.codalab.org/competitions/26138#learn_the_details).
 
 <p align="center">
-  <img width="378" height="393" src="https://github.com/adrianofragomeni/MI-MM/blob/main/img/model.png?raw=true",     title="MI-MM model">
+  <img width="378" height="393" src="https://github.com/adrianofragomeni/MI-MM/blob/main/img/model.png?raw=true">
 </p>
 
-The model is based on 
 ## Data
 The data directory contains 5 folders:
 * `dataframes`: It contains the train and validation csv files of EPIC-Kitchens.
