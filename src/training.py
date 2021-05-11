@@ -45,7 +45,8 @@ def train_epoch(training_loader,device, optimizer,scheduler,net, type_loss):
         loss.backward()
 
         optimizer.step()
-        scheduler.step()
+    
+    scheduler.step()
         
     return {"training_loss" :running_loss / (i_batch + 1), "training_loss_tv" :running_loss_tv / (i_batch + 1), "training_loss_vt" :running_loss_vt / (i_batch + 1)}
 
