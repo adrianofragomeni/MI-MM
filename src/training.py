@@ -132,8 +132,7 @@ def train(args_):
                     "epoch": epoch+1,
                     "state_dict": net.state_dict(),
                     "best_score": validation_metrics["testing_loss"],
-                    "optimizer": optimizer.state_dict(),
-                    "scheduler":scheduler.state_dict()
+                    "optimizer": optimizer.state_dict()
                 })
     
         
