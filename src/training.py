@@ -10,7 +10,7 @@ from tqdm import tqdm
 from evaluation.monitoring import Summary,Monitor
 from loader.loader_features import FeatureLoader, ToTensor
 from models.embedding_projection import Embedding_Projection
-from losses import  MAXMARGIN,optimizer_scheduler
+from losses import  MAXMARGIN
 import numpy as np
 import random
 
@@ -19,7 +19,7 @@ np.random.seed(0)
 random.seed(0)
 th.manual_seed(0)
 
-def train_epoch(training_loader,device, optimizer,scheduler,net, type_loss):
+def train_epoch(training_loader,device, optimizer,net, type_loss):
     
     running_loss = 0.0
     running_loss_tv=0.0
@@ -45,7 +45,6 @@ def train_epoch(training_loader,device, optimizer,scheduler,net, type_loss):
         loss.backward()
 
         optimizer.step()
-        scheduler.step()
         
     return {"training_loss" :running_loss / (i_batch + 1), "training_loss_tv" :running_loss_tv / (i_batch + 1), "training_loss_vt" :running_loss_vt / (i_batch + 1)}
 
@@ -112,7 +111,6 @@ def train(args_):
     type_loss=MAXMARGIN.MaxMarginRankingLoss(margin=args_.margin)
     type_loss.to(device)
     optimizer = optim.Adam(net.parameters(), lr=args_.lr)
-    scheduler = optimizer_scheduler.get_constant_schedule(optimizer)
 
     net.train()
     net.to(device)
@@ -121,7 +119,7 @@ def train(args_):
 
     for epoch in tqdm(range(args_.epochs)):
         
-        training_metrics=train_epoch(training_loader,device, optimizer,scheduler,net, type_loss)
+        training_metrics=train_epoch(training_loader,device, optimizer,net, type_loss)
 
         monitor.log_train(epoch +1,training_metrics)
         summary.write_train(training_metrics,epoch)
