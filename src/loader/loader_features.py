@@ -51,8 +51,7 @@ class FeatureLoader(Dataset):
 class ToTensor(object):
     """Convert ndarrays in sample to Tensors."""
 
-    def __call__(self, sample):
-        video_feat = sample["video_embed"]        
-        sample["video_embed"]=th.from_numpy(video_feat).float()
+    def __call__(self, sample):    
+        sample["video_embed"]=th.from_numpy(sample["video_embed"]).float()
         
         return sample
