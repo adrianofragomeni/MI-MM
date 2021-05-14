@@ -41,7 +41,7 @@ def train_epoch(training_loader,device, optimizer,net, type_loss):
         running_loss_tv += loss_tv.data
         running_loss_vt += loss_vt.data
         
-        running_loss += loss.data
+        running_loss += loss.item()
         loss.backward()
 
         optimizer.step()
@@ -70,8 +70,8 @@ def validation_epoch(testing_loader,device,net, type_loss):
             loss_vt = type_loss(batch_similarity_matrix.t())
             loss=loss_vt+loss_tv
             
-            running_loss_tv += loss_tv.data
-            running_loss_vt += loss_vt.data
+            running_loss_tv += loss_tv.item()
+            running_loss_vt += loss_vt.item()
 
             all_video_embed.append(video_embed.cpu().numpy())
             all_text_embed.append(text_embed.cpu().numpy())
