@@ -38,6 +38,6 @@ After training the model, you can find 2 different weigths in `data/models`:
 ### Testing
 You can evaluate the model and create the submission file by running `python testing.py`. This will evaluate the model using the default value `model_best.pth.tar`, but you can select `checkpoint.pth.tar` by running `python testing.py --best-model=checkpoint.pth.tar`.
 
-After testing, you can find the submission file in `outputs/test.pkl`.
+After testing, you can find the submission file in `output/test.pkl`.
 
 Other details on the submission can be found [here](https://github.com/epic-kitchens/C5-Multi-Instance-Retrieval).
