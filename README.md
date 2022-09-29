@@ -19,7 +19,7 @@ The data directory contains 5 folders:
 * `relevancy`: It contains the training relevancy matrix needed to train the model.
 * `resources`: It contains the weights of the S3D model trained on HowTo100M and the word embeddings.
 
-You can download the data directory from [here](https://www.dropbox.com/sh/lp1zu27e9dbemfi/AADankJuhiOurXqYk3bXTGLRa?dl=0)
+You can download the data directory from [here](https://www.dropbox.com/scl/fo/gx1p1m78s8jn4awmn6ry9/h?dl=0&rlkey=29abpuqw8tv7xifd9r2yktvso)
 
 ## How to use it
 
